@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Opi englantia pelien avulla</title>
+</head>
+<body>
+    <header>
+        <h1>Projektin nimi</h1>
+        <p>
+          <a href="etusivu.html">Etusivu</a> |
+          <a href="infosivu.html">Infosivu</a> |
+          <a href="susanna.html">Susanna</a> |
+          <a href="ejona.html">Ejona</a> |
+          <a href="jonna.html">Jonna</a> |
+          <a href="olivia.html">Olivia</a> |
+          <a href="sanna.html">Sanna</a> |
+          <a href="salla.html">Salla</a>
+        </p>
+      </header>
+
+  <main>
+    <div class="grid">
+      <a href="mato.html" class="box">mato</a>
+      <a href="elainkuvakortit.html" class="box">Eläinkuvakortit</a>
+      <a href="varit.html" class="box">Värit <br> väriyhdistelmät</a>
+      <a href="liikunta.html" class="box">Liikunta <br> Liikunta</a>
+      <a href="rentoutuminen.html" class="box">Pallo <br> rentoutuminen</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Tekijät: Oulun Amk</p>
+  </footer>
+</body>
+</html>
