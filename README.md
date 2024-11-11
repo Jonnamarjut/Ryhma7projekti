@@ -1,4 +1,4 @@
 # Ryhma7projekti
 
 Jonna Pehkonen, Jonnamarjut
-Sanna Virkki, mediasanna
+Sanna Virkki, mediasanna, n3kwoi
