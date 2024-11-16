@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Sivuston fontti */
+    font-family: 'Barlow Condensed'; /* Sivuston fontti */
     background-color: var(--bg-color); /* Sivuston taustaväri */
     color: var(--text-color);         /* Tekstin väri */
     margin: 0;                         /* Poistaa oletusmarginaalit */
