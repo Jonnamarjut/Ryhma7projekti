@@ -53,9 +53,10 @@ header p a:hover {
 }
 
 header img {
-    width: 500px;
-    height: 100px;
-
+    width: 200px;
+    height: 80px;
+    padding-left: 20%; /*lisätty että kuva ei olisi ihan vasemmassa reunassa*/
+    object-fit: contain; /*lisätty ettei kuva veny*/
 }
 
 main {
@@ -102,7 +103,8 @@ footer {
 }
 
 footer img {
-    width: 250px;
+    width: 500px;
     height: 100px;
-
+    padding-left: 20%; /*lisätty että kuva ei olisi ihan vasemmassa reunassa*/
+    object-fit: contain; /*lisätty ettei kuva veny*/
 }
