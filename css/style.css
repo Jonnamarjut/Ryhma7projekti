@@ -7,8 +7,12 @@
     --box-hover: #E07A5F;        /* Boksien hover-väri, kun hiiri on boksin päällä */
 }
 
+html{
+    height: 100%;
+}
+
 body {
-    font-family: Arial, sans-serif; /* Sivuston fontti */
+    font-family: 'Barlow Condensed'; /* Sivuston fontti */
     background-color: var(--bg-color); /* Sivuston taustaväri */
     color: var(--text-color);         /* Tekstin väri */
     margin: 0;                         /* Poistaa oletusmarginaalit */
@@ -16,13 +20,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;               /* Kohdistaa sisällön keskelle */
+    height: 100%;
+
 }
 
 header {
     background-color: var(--header-color); /* Headerin taustaväri */
     padding: 20px;                         /* Sisäinen reunus headerissa */
     text-align: center;                    /* Kohdistaa tekstin keskelle */
+    align-items: center;
     width: 100%;                           /* Tekee headerista koko sivun levyisen */
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 }
 
 header h1 {
@@ -40,12 +52,30 @@ header p a:hover {
     text-decoration: underline;           /* alleviivavaus linkille, kun hiiri on sen päällä */
 }
 
-main {
+header img {
+    width: 200px;
+    height: 80px;
+    padding-left: 20%; /*lisätty että kuva ei olisi ihan vasemmassa reunassa*/
+    object-fit: contain; /*lisätty ettei kuva veny*/
+}
+
+main .index-page {
     flex: 1;
     display: flex;
     justify-content: center;              /* Kohdistaa sisällön vaakasuunnassa keskelle */
     align-items: center;                  /* Kohdistaa sisällön pystysuunnassa keskelle */
     padding: 20px;                        /* Sisäinen reunus pääsisällölle */
+}
+
+main .info-page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    max-width: 80%;
+    box-sizing: border-box;
 }
 
 .grid {
@@ -77,4 +107,15 @@ footer {
     padding: 10px;                           /* Sisäinen reunus footerissa */
     width: 100%;                             /* Tekee footerista koko sivun levyisen */
     text-align: center;                      /* Kohdistaa tekstin keskelle */
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+footer img {
+    width: 500px;
+    height: 100px;
+    padding-left: 20%; /*lisätty että kuva ei olisi ihan vasemmassa reunassa*/
+    object-fit: contain; /*lisätty ettei kuva veny*/
 }
