@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
-    <title>Wonderland</title>
+    <title>Info</title>
 </head>
 <body>
     <header>
-        <img src="../shared-img/LOGOHEADER.png" id="headerlogo">
-        <p>
-            <a href="etusivu.html">Etusivu</a> |
-            <a href="info.html">Infosivu</a> |
-            <a href="vaatteet.html">Vaatteet</a> |
-            <a href="varit.html">Värit</a> |
-            <a href="adjektiivit.html">Adjektiivit</a> |
-            <a href="elaimet.html">Eläimet</a> |
-            <a href="liikunta.html">Liikunta</a> |
-            <a href="rentoutuminen.html">Rentoutuminen</a>
-          </p>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <img src="../shared-img/LOGOHEADER.png" alt="headerImg" id="headerImg">
+                        <li class="nav-item"><a class="nav-link active" href="">Etusivu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Infosivu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Vaatteet</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Värit</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Adjektiivit</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Eläimet</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Liikunta</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Rentoutuminen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main id="info-page">
         <p>Tämä projekti on toteutettu Oulun ammattikorkeakoulun ensimmäisen lukuvuoden opiskelijoiden ryhmässä. Opintojakson alussa ryhmämme suunnitteli aiheen ja laajuuden. Osaltaan toteutusta ohjasivat ennalta määritellyt vaatimukset, mutta hyvin vapaasti tämän suoritukseen on saanut käyttää omaa osaamistaan ja mielikuvitusta. Ryhmämme aiheeksi valikoitui englannin opettaminen noin 8-10-vuotiaille lapsille. Tarkoituksena on opettaa englantia hauskalla ja mukaansa tempaavalla tavalla. <br>
@@ -37,9 +47,18 @@
         <h3>Salla: Mindfulness-sivu tuo lapsille uusia taitoja keskittymisessa, pysähtymisessä ja pelin jälkeisen ylivirittänäisyyden tasaamiseen. </h3>
         <p>Esittely tähän</p>
     </main>
-    <footer>
-        <img src="../shared-img/LOGO4.png" id="footerlogo">
-        <p>Tekijät: Oulun Amk</p>
+    <footer class="custom-footer">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="../shared-img/LOGO4.png" alt="footerImg" id="footerImg">
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Tekijä: XXXXXXXX / Oulun ammmattikorkeakoulu</p>
+                </div>
+            </div>  
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

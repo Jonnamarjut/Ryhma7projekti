@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
-  <title>Wonderland</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+    <title>Wonderland</title>
 </head>
 <body>
     <header>
-        <img src="./shared-img/LOGOHEADER.png" id="headerlogo">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-              <a href="">Tähän tulee logo</a>
-              <li class="nav-item"><a class="nav-link active" href="etusivu.html">Etusivu</a></li>
-              <li class="nav-item"><a class="nav-link active" href="info.html">Infosivu</a></li>
-              <li class="nav-item"><a class="nav-link active" href="vaatteet.html">Vaatteet</a></li>
-              <li class="nav-item"><a class="nav-link active" href="varit.html">Värit</a></li>
-              <li class="nav-item"><a class="nav-link active" href="adjektiivit.html">Adjektiivit</a></li>
-              <li class="nav-item"><a class="nav-link active" href="elaimet.html">Eläimet</a></li>
-              <li class="nav-item"><a class="nav-link active" href="liikunta.html">Liikunta</a></li>
-              <li class="nav-item"><a class="nav-link active" href="rentoutuminen.html">Rentoutuminen</a></li>
-          </ul>
-      </div>
-
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <img src="./shared-img/LOGOHEADER.png" alt="headerImg" id="headerImg">
+                        <li class="nav-item"><a class="nav-link active" href="">Etusivu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Infosivu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Vaatteet</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Värit</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Adjektiivit</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Eläimet</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Liikunta</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="">Rentoutuminen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main id="index-page">
-      <div class="grid">
-        <a href="vaatteet.html" class="box">Vaatteet</a>
-        <a href="elaimet.html" class="box">Eläimet</a>
-        <a href="varit.html" class="box">Värit</a>
-        <a href="adjektiivit.html" class="box">Adjektiivit</a>
-        <a href="liikunta.html" class="box">Liikunta</a>
-        <a href="rentoutuminen.html" class="box">Rentoutuminen</a>
+        <div class="container mt-5 text-center">
+          <h2>Tähän tulee mahtava etusivu!</h2>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <a href="vaatteet.html" class="box"><img src="./shared-img/clothes.png" alt="Klikkaa kuvaa"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <a href="elaimet.html" class="box"><img src="./shared-img/animals.png" alt="Klikkaa kuvaa"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <a href="varit.html" class="box"><img src="./shared-img/colours.png" alt="Klikkaa kuvaa"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+              <a href="adjektiivit.html" class="box"><img src="./shared-img/adj.png" alt="Klikkaa kuvaa"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">  
+              <a href="liikunta.html" class="box"><img src="./shared-img/move.png" alt="Klikkaa kuvaa"></a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">  
+              <a href="rentoutuminen.html" class="box"><img src="./shared-img/leisure-time.png" alt="Klikkaa kuvaa"></a>
+            </div>
+          </div>
         </div>
     </main>
-    <footer>
-        <img src="./shared-img/LOGO4.png" id="footerlogo">
-        <p>Tekijät: Oulun Amk</p>
+    <footer class="custom-footer">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="./shared-img/LOGO4.png" alt="footerImg" id="footerImg">
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Tekijä: XXXXXXXX / Oulun ammmattikorkeakoulu</p>
+                </div>
+            </div>  
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

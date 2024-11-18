@@ -1,121 +1,80 @@
-/* Värit */
-:root {
-    --bg-color: #F4F1DE;         /* Sivuston taustaväri */
-    --header-color: #F2CC8F;     /* Headerin (yläosan) väri */
-    --text-color: #3D405B;       /* Tekstin väri */
-    --footer-color: #81B29A;     /* Footerin (alaosan) väri */
-    --box-hover: #E07A5F;        /* Boksien hover-väri, kun hiiri on boksin päällä */
-}
-
-html{
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 
 body {
-    font-family: 'Barlow Condensed'; /* Sivuston fontti */
-    background-color: var(--bg-color); /* Sivuston taustaväri */
-    color: var(--text-color);         /* Tekstin väri */
-    margin: 0;                         /* Poistaa oletusmarginaalit */
-    padding: 0;                        /* Poistaa oletusreunat */
+    font-family: 'Barlow Condensed';
+    background-color: #f4f1de;
     display: flex;
     flex-direction: column;
-    align-items: center;               /* Kohdistaa sisällön keskelle */
-    height: 100%;
-
+    min-height: 100hv;
+    margin: 0;
 }
 
-header {
-    background-color: var(--header-color); /* Headerin taustaväri */
-    padding: 20px;                         /* Sisäinen reunus headerissa */
-    text-align: center;                    /* Kohdistaa tekstin keskelle */
-    align-items: center;
-    width: 100%;                           /* Tekee headerista koko sivun levyisen */
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+main {
+    flex: 1;
 }
 
-header h1 {
-    margin: 0;                            /* Poistaa otsikon marginaalit */
-    font-size: 24px;                      /* Otsikon tekstin koko */
+p {
+    font-size: 1.2em;
 }
 
-header p a {
-    color: var(--text-color);             /* Linkkien väri headerissa */
-    text-decoration: none;                /* Poistaa alleviivauksen linkeistä */
-    margin: 0 5px;                        /* Marginaali linkkien välillä */
+h2 {
+    color: #3d405b;
 }
 
-header p a:hover {
-    text-decoration: underline;           /* alleviivavaus linkille, kun hiiri on sen päällä */
+.custom-button {
+    background-color: #3d405b;
+    color: white;
 }
 
-header img {
-    width: 200px;
-    height: 80px;
-    padding-left: 20%; /*lisätty että kuva ei olisi ihan vasemmassa reunassa*/
-    object-fit: contain; /*lisätty ettei kuva veny*/
+.custom-navbar {
+    background-color: #f2cc8f;
+    padding: 20px 0;
 }
 
-main .index-page {
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    color: #3d405b;
+}
+
+.custom-footer {
+    background-color: #81b29a;
+    color: #3d405b;
+    padding: 20px 0;
+    position: relative;
+}
+
+.box img {
+    width: 60%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
+
+.custom-footer img {
+    width: 60%;
+}
+
+/*main .index-page {
     flex: 1;
     display: flex;
     justify-content: center;              /* Kohdistaa sisällön vaakasuunnassa keskelle */
-    align-items: center;                  /* Kohdistaa sisällön pystysuunnassa keskelle */
-    padding: 20px;                        /* Sisäinen reunus pääsisällölle */
+    /*align-items: center;                  /* Kohdistaa sisällön pystysuunnassa keskelle */
+    /*padding: 20px;
 }
-
-main .info-page {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-    max-width: 80%;
-    box-sizing: border-box;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 150px); /* Asettaa ruudukkoon 2 saraketta, joissa kummassakin on 150px leveys */
-    gap: 20px;                                /* Etäisyys boksien välillä */
-    margin-top: 20px;                         /* Etäisyys pääsisällön yläreunasta */
-}
-
 .box {
     background-color: var(--bg-color);       /* boksien taustaväri */
-    border: 2px solid var(--text-color);     /* boksien reunojen väri ja paksuus */
-    border-radius: 10px;                     /* pyöristää boksien kulmat */
-    padding: 20px;                           /* sisäinen reunus bokseille */
-    text-align: center;                      /* Kohdistaa tekstin keskelle */
-    font-weight: bold;                       /* Tekstin lihavointi */
-    text-decoration: none;                   /* Poistaa linkkityylin boksista */
-    color: var(--text-color);                /* Boksin tekstin väri */
-    transition: background-color 0.3s ease;  /* Lisää liukuvärin taustavärivaihdoksen boksille hover-tilassa */
-}
+    /*border: 2px solid var(--text-color);     /* boksien reunojen väri ja paksuus */
+    /*border-radius: 10px;                     /* pyöristää boksien kulmat */
+    /*padding: 20px;                           /* sisäinen reunus bokseille */
+    /*text-align: center;                      /* Kohdistaa tekstin keskelle */
+    /*font-weight: bold;                       /* Tekstin lihavointi */
+    /*text-decoration: none;                   /* Poistaa linkkityylin boksista */
+    /*color: var(--text-color);                /* Boksin tekstin väri */
+    /*transition: background-color 0.3s ease;  /* Lisää liukuvärin taustavärivaihdoksen boksille hover-tilassa */
+/*}
 
-.box:hover {
-    background-color: var(--box-hover);      /* Muuttaa boksin taustaväriä, kun hiiri on päällä */
-    color: white;                            /* Muuttaa tekstin väriä hover-tilassa */
-}
-
-footer {
-    background-color: var(--footer-color);   /* Footerin taustaväri */
-    padding: 10px;                           /* Sisäinen reunus footerissa */
-    width: 100%;                             /* Tekee footerista koko sivun levyisen */
-    text-align: center;                      /* Kohdistaa tekstin keskelle */
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-footer img {
-    width: 500px;
-    height: 100px;
-    padding-left: 20%; /*lisätty että kuva ei olisi ihan vasemmassa reunassa*/
-    object-fit: contain; /*lisätty ettei kuva veny*/
-}
