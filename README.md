@@ -19,6 +19,10 @@ Tässä pelissä pelaajat oppivat sekoittamaan värejä ja värien nimiä englan
 Pelaaja voi vetää ja pudottaa värejä sekoitusastiaan, ja peli näyttää, mitä väriä he ovat luoneet. 
 Pelaaja saa pisteen kun arvaa mikä väri sekoituastiassa on kyseessä.
 
+### Mindfulness -peli
+
+Mindfulness -pelissä tasataan ylivirittyneisyyttä ja harjoitellaan rauhallista hengittymistä. Mindfulnees auttaa säätelemään tunteita ja keskittymään hetkeen. 
+
 ## Tekniikoita
 
 Tämän projektin toteutuksessa käytetty: 
