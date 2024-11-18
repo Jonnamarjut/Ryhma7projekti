@@ -12,6 +12,13 @@ Sovelluksen käyttö on helppoa. Etusivulta näet erilaiset teemat, joista voit 
 
 Matopelin avulla voit opetella vaatesanoja englanniksi. Se tarjoaa viihdyttävän ja haasteellisen kokemuksen. Paina "Aloita peli" tai siirry ylävalikosta kohtaan "Vaatteet". Pelaaminen tapahtuu näppäimistön nuolinäppäimiä käyttämällä. Tavoitteena on kasvattaa mato mahdollisimman pitkäksi. Madon kasvattaminen onnistuu ruokkimalla matoa "vaatteilla". Ohjaa matoa nuolinäppäimillä. Peli päättyy mikäli osut madon vartaloon tai seinään.
 
+
+### Väriyhdistelmä peli
+
+Tässä pelissä pelaajat oppivat sekoittamaan värejä ja värien nimiä englanniksi. Esimerkiksi punainen + keltainen = oranssi.
+Pelaaja voi vetää ja pudottaa värejä sekoitusastiaan, ja peli näyttää, mitä väriä he ovat luoneet. 
+Pelaaja saa pisteen kun arvaa mikä väri sekoituastiassa on kyseessä.
+
 ## Tekniikoita
 
 Tämän projektin toteutuksessa käytetty: 
