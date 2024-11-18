@@ -59,12 +59,23 @@ header img {
     object-fit: contain; /*lisätty ettei kuva veny*/
 }
 
-main {
+main .index-page {
     flex: 1;
     display: flex;
     justify-content: center;              /* Kohdistaa sisällön vaakasuunnassa keskelle */
     align-items: center;                  /* Kohdistaa sisällön pystysuunnassa keskelle */
     padding: 20px;                        /* Sisäinen reunus pääsisällölle */
+}
+
+main .info-page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    max-width: 80%;
+    box-sizing: border-box;
 }
 
 .grid {
