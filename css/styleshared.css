@@ -26,6 +26,15 @@ h2 {
     font-weight: bold;
 }
 
+#headerImg {
+    width: 18%;
+    padding-left: 5%;
+}
+
+#footerImg {
+    width: 80%;
+}
+
 .custom-button {
     background-color: #3d405b;
     color: white;
