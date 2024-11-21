@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Barlow Condensed';
+    background-color: #f4f1de;
+    display: flex;
+    flex-direction: column;
+    min-height: 100hv;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+canvas {
+    background-color: #f0f0f0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h2 {
+    color: #3d405b;
+}
+
+.custom-button {
+    background-color: #3d405b;
+    color: white;
+}
+
+.custom-navbar {
+    background-color: #f2cc8f;
+    padding: 20px 0;
+}
+
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    color: #3d405b;
+}
+
+.custom-footer {
+    background-color: #81b29a;
+    color: #3d405b;
+    padding: 20px 0;
+}
+
+.custom-button:hover {
+    font-weight: bold;
+    font-size: 30px;
+    color: #3d405b;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.clothing-list {
+    width: 200px; /* Riittävä tila kuvien näyttämiseen */
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.clothing-item {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.clothing-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.clothing-item span {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
