@@ -17,6 +17,7 @@ main {
     flex: 1;
 }
 
+
 canvas {
     background-color: #f0f0f0;
 }
@@ -58,20 +59,14 @@ h2 {
 
 .game-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
 }
 
-.game-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-}
 
 .clothing-list {
-    width: 200px; /* Riittävä tila kuvien näyttämiseen */
+    width: 200px; 
     text-align: left;
     border: 1px solid #ddd;
     padding: 10px;

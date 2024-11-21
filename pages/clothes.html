@@ -35,14 +35,23 @@
     </header>
     <main>
         <div class="container mt-4 text-center">
-            <h2>Play a game of worms!</h2>
-            <div class="game-container">
-                <canvas id="gameCanvas" width="400" height="400" style="border:1px solid black;"></canvas>
-                <div class="clothing-list" id="clothingList"></div>
+            <h2 class="text-center">Play a game of worms!</h2>
+            <div class="game-container row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 mb-4 mt-4">
+                    <p>Tähän tulee tekstiä miten peliä pelataan</p>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6">
+                    <canvas id="gameCanvas" width="400" height="400" style="max-width: 100%; height: auto; border:1px solid black;"></canvas>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-4 mt-4">
+                    <div class="clothing-list" id="clothingList"></div>
+                </div>
             </div>
-            <p>Score: <span id="score">0</span></p>
-            <p>Collected clothing: <span id="currentClothing"></span></p>
-            <button class="btn custom-button" onclick="restartGame()">Start again</button>
+            <div class="text-center mt-3">
+                <p>Score: <span id="score">0</span></p>
+                <p>Collected clothing: <span id="currentClothing"></span></p>
+                <button class="btn custom-button" onclick="restartGame()">Start again</button>
+            </div>
         </div>
     </main>
     <footer class="custom-footer">
