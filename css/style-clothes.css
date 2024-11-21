@@ -26,6 +26,7 @@ p {
     font-size: 1.2em;
 }
 
+
 h2 {
     color: #3d405b;
 }
@@ -91,4 +92,10 @@ h2 {
     display: block;
     font-size: 14px;
     color: #333;
+}
+
+@media (max-width: 576px) {
+    .clothing-list {
+        margin: 0 auto; /* Keskittää clothing-listin */
+    }
 }
