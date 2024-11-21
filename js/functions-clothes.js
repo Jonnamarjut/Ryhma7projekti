@@ -8,12 +8,12 @@ let gameLoopInterval;
 
 // List of clothes in English
 const clothingItems = [
-    { name: "shirt / paita", img: "images/t-shirt.png" },
-    { name: "pants / housut", img: "images/pants.png" },
-    { name: "hat / hattu", img: "images/hat.png" },
-    { name: "boots / saappaat", img: "images/boots.png" },
-    { name: "skirt / hame", img: "images/skirt.png" },
-    { name: "socks / sukat", img: "images/socks.png" }
+    { name: "shirt / paita", img: "../other-img/t-shirt.png" },
+    { name: "pants / housut", img: "../other-img/pants.png" },
+    { name: "hat / hattu", img: "../other-img/hat.png" },
+    { name: "boots / saappaat", img: "../other-img/boots.png" },
+    { name: "skirt / hame", img: "../other-img/skirt.png" },
+    { name: "socks / sukat", img: "../other-img/socks.png" }
 ];
 let currentClothingIndex = -1; // Let's initialize the index so we can check the latest garment
 let food = { x: 100, y: 100, item: null };
