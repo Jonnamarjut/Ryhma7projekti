@@ -9,7 +9,7 @@ body {
     background-color: #f4f1de;
     display: flex;
     flex-direction: column;
-    min-height: 100hv;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -17,6 +17,21 @@ main {
     flex: 1;
 }
 
+#headerImg {
+    width: 18%;
+    padding-left: 5%;
+}
+
+#footerImg {
+    width: 80%;
+}
+
+.game-instructions {
+    border-radius: 15px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: #facc8f;
+}
 
 canvas {
     background-color: #f0f0f0;
@@ -34,6 +49,7 @@ h2 {
 .custom-button {
     background-color: #3d405b;
     color: white;
+    transition: all 0.3s ease;
 }
 
 .custom-navbar {
@@ -50,21 +66,31 @@ h2 {
     background-color: #81b29a;
     color: #3d405b;
     padding: 20px 0;
+    
 }
 
 .custom-button:hover {
     font-weight: bold;
     font-size: 30px;
     color: #3d405b;
+    background-color: #f4f1de;
+}
+
+.custom-button:active {
+    transform: scale(0.95);
 }
 
 .game-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
 }
 
+.col-12 {
+    flex: 1;
+    max-width: 100%;
+}
 
 .clothing-list {
     width: 200px; 
@@ -94,8 +120,19 @@ h2 {
     color: #333;
 }
 
+@media (max-width: 768px) {
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media (max-width: 576px) {
     .clothing-list {
-        margin: 0 auto; /* Keskittää clothing-listin */
+        margin: 0 auto; /* centralize clothing-list */
+    }
+
+    .game-instructions {
+        margin: 0 auto; /* centralize clothing-list */
     }
 }

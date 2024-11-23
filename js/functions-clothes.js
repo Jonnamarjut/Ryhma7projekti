@@ -87,7 +87,7 @@ function drawFood() {
 
 function drawClothingItems() {
     const clothingList = document.getElementById("clothingList");
-    clothingList.innerHTML = ""; // Tyhjennetään lista ennen uusien kuvien lisäämistä
+    clothingList.innerHTML = ""; // Let's clear the list before adding new pictures
 
     clothingItems.forEach((item, index) => {
         const itemDiv = document.createElement("div");
@@ -105,20 +105,6 @@ function drawClothingItems() {
         clothingList.appendChild(itemDiv);
     });
 }
-
-function highlightCollectedItem(itemName) {
-    const clothingList = document.querySelectorAll(".clothing-item span");
-
-    clothingList.forEach(span => {
-        if (span.textContent === itemName) {
-            span.parentElement.style.backgroundColor = "#d1ffd1"; // Korostusväri
-        } else {
-            span.parentElement.style.backgroundColor = "transparent"; // Poista korostus muilta
-        }
-    });
-}
-
-
 
 function nextClothing() {
     placeFood();
@@ -161,14 +147,17 @@ function saveScore(score) {
 }
 
 function restartGame() {
+    const button = document.querySelector(".custom-button");
+    button.style.fontSize = "";
+    button.style.fontWeight ="";
     snake = [{ x: 160, y: 160 }, { x: 140, y: 160 }, { x: 120, y: 160 }];
     direction = { x: 20, y: 0 };
     score = 0;
-    //currentClothingIndex = 0;
     currentClothingIndex = -1;
     document.getElementById("score").textContent = score;
     document.getElementById("currentClothing").textContent = "";
     placeFood();
+    clearInterval(gameLoopInterval);
     gameLoopInterval = setInterval(gameLoop, 100);
 }
 
