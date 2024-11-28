@@ -1,0 +1,158 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Barlow Condensed';
+    background-color: #f4f1de;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.headerlogo {
+    position: absolute; /* Vakiona logo on vasemmassa yläkulmassa */
+    top: 10px;
+    left: 10px; /* Sijoitetaan vasemmalle */
+    width: 200px; /* Säädä logon kokoa tarvittaessa */
+  }
+  
+  /* Keskittäminen mobiilinäkymässä */
+  @media (max-width: 768px) { /* Muutokset mobiilinäkymälle */
+    .headerlogo {
+      position: relative; /* Poista absoluuttinen sijainti */
+      margin: 0 auto; /* Keskittää logon vaakasuunnassa */
+      display: block; /* Varmistaa keskityksen */
+      text-align: center; /* Keskitetään myös sisältö */
+    }
+  }
+
+#footerImg {
+    width: 80%;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+}
+
+.game-instructions {
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: #facc8f;
+    margin-right: 12px;
+}
+
+canvas {
+    background-color: #f0f0f0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.textofscores {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #3d405b;
+}
+
+
+.custom-navbar {
+    background-color: #f2cc8f;
+    padding: 20px 0;
+}
+
+.custom-navbar .nav-link.active {
+    font-weight: bold;
+    color: #3d405b;
+}
+
+.custom-footer {
+    background-color: #81b29a;
+    color: #3d405b;
+    padding: 20px 0;
+    
+}
+
+.gamecontainer {
+    display: grid;
+    justify-content: center;
+    gap: 8px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(6, calc(50px/3*6));
+
+}
+
+.cardContent{
+    height: calc(100px/3*3);
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.frontView, .backView {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
+.frontView img, .backView img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.backView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2cc8f;
+
+}
+
+@media only screen and (min-width: 728px) {
+
+    body{
+        background-color: #F4F1DE;
+    }
+
+    .gamecontainer {
+        gap: 10px;
+        grid-template-columns: repeat(6, 140px);
+        grid-template-rows: repeat(3, calc(160px/3*3));
+    }
+
+    .cardContent{
+        height: calc(160px/3*3);
+        width: 140px;
+
+    }
+}
+
+@media only screen and (max-width: 728px) {
+
+    .game-container {
+        flex-direction: column;
+        margin-left: 0;
+    }
+}
