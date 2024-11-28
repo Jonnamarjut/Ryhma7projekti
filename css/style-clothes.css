@@ -136,3 +136,19 @@ h2 {
         margin: 0 auto; /* centralize clothing-list */
     }
 }
+
+.headerlogo {
+    position: absolute; 
+    top: 10px;
+    left: 10px; 
+    width: 200px; 
+  }
+ 
+  @media (max-width: 768px) { 
+    .headerlogo {
+      position: relative; 
+      margin: 0 auto; 
+      display: block; 
+      text-align: center; 
+    }
+  }

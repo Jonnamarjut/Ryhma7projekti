@@ -4,7 +4,7 @@ function displayLatestScoreClothes() {
     let vaatteetPisteetElement = document.getElementById("vaatteetpisteet");
     if (highScores.length > 0) {
         let viimeisinPiste = highScores[highScores.length - 1];
-        vaatteetPisteetElement.textContent = `${viimeisinPiste} points`;
+        vaatteetPisteetElement.textContent = `${viimeisinPiste}`;
     } else {
         vaatteetPisteetElement.textContent = "No points";
     }
@@ -13,8 +13,8 @@ displayLatestScoreClothes();
 
 //Clothes points
 
-const scoresOfClothes = localStorage.getItem('')
-document.getElementById('vaatteetpisteet').innerHTML = scoresOfClothes
+//const scoresOfClothes = localStorage.getItem('')
+//document.getElementById('vaatteetpisteet').innerHTML = scoresOfClothes
 
 
 //Animals points
@@ -48,9 +48,22 @@ document.getElementById('liikuntapisteet').innerHTML = scoresOfExercising
 
 //Total score
 
-let score = parseInt(localStorage.getItem('animals'))
+// Search and add animals points
+let score = parseInt(localStorage.getItem('animals')) || 0; // add zero if no value
 
-//  score += parseInt(localStorage.getItem(''))
+// Search and add clothes points 
+function getClothesPoints() {
+    let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    if (highScores.length > 0) {
+        return highScores[highScores.length - 1];
+    }
+    return 0; 
+}
+// Add clothes points to the total score
+score += getClothesPoints ();
+
+
+
 //  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
