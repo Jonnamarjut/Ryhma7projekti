@@ -18,19 +18,18 @@ main {
 }
 
 .headerlogo {
-    position: absolute; /* Vakiona logo on vasemmassa yläkulmassa */
+    position: absolute;
     top: 10px;
-    left: 10px; /* Sijoitetaan vasemmalle */
-    width: 200px; /* Säädä logon kokoa tarvittaessa */
+    left: 10px;
+    width: 200px;
   }
   
-  /* Keskittäminen mobiilinäkymässä */
-  @media (max-width: 768px) { /* Muutokset mobiilinäkymälle */
+  @media (max-width: 768px) { 
     .headerlogo {
-      position: relative; /* Poista absoluuttinen sijainti */
-      margin: 0 auto; /* Keskittää logon vaakasuunnassa */
-      display: block; /* Varmistaa keskityksen */
-      text-align: center; /* Keskitetään myös sisältö */
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
     }
   }
 
