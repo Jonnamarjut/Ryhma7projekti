@@ -31,6 +31,10 @@ Muistipelin avulla tulet oppimaan englanninkielisiä eläinten termejä. Pelin s
 
 Kannustamme pelaajia nousemaan ylös ja liikkumaan pelaamisen lomassa – terveys ja hauskuus voivat kulkea käsi kädessä! Peli on englanniksi, joten jumpan ohella pelaaja voi oppia esimerkiksi uusia sanoja käytännössä! 
 
+### Adjektiivien etsintä
+
+Sanojen etsintä pelissä on tarkoituksena löytää ruudukosta kirjaimien keskeltä 10 adjektiivia englanniksi, jotka on lueteltuna sivun reunassa. Sanat voivat olla ruudukossa joko vaakasuoraan, pystysuoraan tai vinottain. Tämä peli kehittää niin sanavarastoa, hahmottamista, tavaamista kuin keskittymistä. 
+
 ## Tekniikoita
 
 Tämän projektin toteutuksessa käytetty: 
