@@ -33,6 +33,15 @@ main {
     }
   }
 
+  @media (max-width: 1024px) { 
+    .headerlogo {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+}
+
 #footerImg {
     width: 80%;
 }

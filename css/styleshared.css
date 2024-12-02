@@ -33,6 +33,15 @@ h2 {
     width: 200px;
   }
   
+  @media (max-width: 1024px) { 
+    .headerlogo {
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+}
+
   @media (max-width: 768px) { 
     .headerlogo {
       position: relative;
