@@ -11,12 +11,6 @@ function displayLatestScoreClothes() {
 }
 displayLatestScoreClothes();
 
-//Clothes points
-
-//const scoresOfClothes = localStorage.getItem('')
-//document.getElementById('vaatteetpisteet').innerHTML = scoresOfClothes
-
-
 //Animals points
 
 const scoresOfAnimals = localStorage.getItem('animals')
