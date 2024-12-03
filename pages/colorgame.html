@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Mixing Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/varipeli.css">
+</head>
+<body>
+  <header class="header">
+    <img src="../shared-img/LOGOHEADER.png" alt="headerImg" id="headerImg" class="headerlogo">
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">Info</a> |
+      <a href="#">Susanna</a> |
+      <a href="#">Ejona</a> |
+      <a href="#">Jonna</a> |
+      <a href="#">Olivia</a> |
+      <a href="#">Sanna</a> |
+      <a href="#">Salla</a>
+    </nav>
+  </header>
+  <main class="content">
+    <h2>Color Mixing Game</h2>
+
+    <div id="color-selection">
+      <div class="color" style="background-color: red;" data-color="red" draggable="true"></div>
+      <div class="color" style="background-color: yellow;" data-color="yellow" draggable="true"></div>
+      <div class="color" style="background-color: blue;" data-color="blue" draggable="true"></div>
+      <div class="color" style="background-color: green;" data-color="green" draggable="true"></div>
+      <div class="color" style="background-color: orange;" data-color="orange" draggable="true"></div>
+      <div class="color" style="background-color: purple;" data-color="purple" draggable="true"></div>
+      <div class="color" style="background-color: teal;" data-color="teal" draggable="true"></div>
+    </div>
+
+    <div id="mixing-bowl" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p>Drop colors here</p>
+    </div>
+
+    <div id="result">
+      <h3>Mixed Color:</h3>
+      <div id="mixed-color"></div>
+    </div>
+
+    <div id="guess-section">
+      <h3>Guess the mixed color:</h3>
+      <input type="text" id="color-guess" placeholder="Type your guess">
+      <button onclick="checkGuess()">Guess</button>
+      <p id="feedback"></p>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+  </main>
+  <script src="../js/varipeli.js"></script>
+  <footer class="footer">
+    <img src="../shared-img/LOGO4.png" alt="footerImg" id="footerImg">
+    <p>Tekijät: Susanna, Ejona, Jonna, Olivia, Sanna ja Salla / Oulun ammmattikorkeakoulu</p>
+  </footer>
+</body>
+</html>
