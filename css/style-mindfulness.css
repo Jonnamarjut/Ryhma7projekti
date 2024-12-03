@@ -28,7 +28,7 @@ body {
     object-fit: cover; /* Videon mittasuhteiden säilytys */
 }
 
-/* Otsikko */
+/* otsikko */
 h1 {
     font-size: 24px;
     color: #333;
@@ -51,19 +51,19 @@ h1 {
     animation: breathe 8s ease-in-out infinite;
 }
 
-/* Ohjetekstin tyyli */
+/* ohjeteksti */
 #instruction, #counter, #message {
     font-size: 18px;
     margin-top: 20px;
     text-align: center;
 }
 
-/* Pallon animaatio */
+/* pallon animaatio */
 @keyframes breathe {
     0%, 100% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.5); /* Ympyrä suurenee/pienenee */
+        transform: scale(1.5); /* pallo suurenee tai pienenee */
     }
 }
