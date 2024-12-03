@@ -1,4 +1,4 @@
-/* otsikon tyyli */
+/* Otsikon tyyli */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff; 
@@ -12,7 +12,7 @@ body {
     overflow: hidden; /* vierityspalkin poisto */
 }
 
-/* taustavideon tyyli */
+/* Taustavideon tyyli */
 .video-background {
     position: fixed;
     top: 0;
@@ -20,6 +20,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1; 
+}
 
 #background-video {
     width: 100%;
@@ -57,7 +58,7 @@ h1 {
     text-align: center;
 }
 
-/* pallon animaatio */
+/* Pallon animaatio */
 @keyframes breathe {
     0%, 100% {
         transform: scale(1);
