@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+    <title>Connect the right adjektive</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="./pictures/LOGOHEADER.png" alt="headerImg" id="headerImg" class="headerlogo">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="nav-link mt-4 fs-5" style="padding-left: 260px">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link active" href="../index.html">Etusivu</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="../pages/info.html">Infosivu</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="../pages/clothes.html">Vaatteet</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="varit.html">Värit</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="adjektiivit.html">Adjektiivit</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="../pages/animals.html">Eläimet</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="liikunta.html">Liikunta</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="rentoutuminen.html">Rentoutuminen</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header> 
+    <main>
+        <div class="container mt-4">
+            <h2 class="text-center">Connect the right adjective</h2>
+            <div class="game-container">
+                <div class="game-instructions col-12 col-md-5 col-lg-4 mb-2 mt-4 text-center">
+                    <p>You will see a picture of an animal. Connect the correct adjective by dragging and dropping it on to
+                      the picture. You'll get a point per correct answer. 
+                      <br>
+                      <br>
+                      Tulet näkemään kuvan eläimestä. Yhdistä oikea adjektiivi raahaamalla ja tiputtamalla se kuvan päälle. Saat pisteitä jokaisesta 
+                      oikeasta vastauksesta. 
+                    </p>
+                </div>
+                <div class="gamecontainer">
+                  <div class="image-container">
+                      <img src="./pictures/happy.jpg" alt="Happy Dog">
+                  </div>
+                  <div class="adjective-container">
+                      <div id="happy" class="adjective" draggable="true">Happy</div>
+                      <div id="sad" class="adjective" draggable="true">Sad</div>
+                  </div>
+                  <div id="message"></div>
+                  <button id="next-image" class="btn custom-button mt-3">Next</button>
+                </div>
+            <p class="textofscores">Score:<output></output></p>
+        </div>
+    </main>
+    <footer class="custom-footer">
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="./pictures/LOGO4.png" alt="footerImg" id="footerImg">
+                </div>
+                <div class="col-md-6 mt-4">
+                    <p>Tekijät: Susanna, Ejona, Jonna, Olivia, Sanna ja Salla / Oulun ammmattikorkeakoulu</p>
+                </div>
+            </div>  
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
