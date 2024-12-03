@@ -1,3 +1,4 @@
+
 /* Otsikon tyyli */
 body {
     font-family: Arial, sans-serif;
@@ -28,7 +29,7 @@ body {
     object-fit: cover; /* Videon mittasuhteiden säilytys */
 }
 
-/* otsikko */
+/* Otsikko */
 h1 {
     font-size: 24px;
     color: #333;
@@ -36,7 +37,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Hengitysharjoituksen ympyrän tyyli */
+/* Hengitysharjoituksen pallon tyyli */
 .breathing-container {
     display: flex;
     justify-content: center;
@@ -51,19 +52,19 @@ h1 {
     animation: breathe 8s ease-in-out infinite;
 }
 
-/* ohjeteksti */
+/* Ohjetekstin tyyli */
 #instruction, #counter, #message {
     font-size: 18px;
     margin-top: 20px;
     text-align: center;
 }
 
-/* pallon animaatio */
+/* Pallon animaatio */
 @keyframes breathe {
     0%, 100% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.5); /* pallo suurenee tai pienenee */
+        transform: scale(1.5); /* Ympyrä suurenee/pienenee */
     }
 }
