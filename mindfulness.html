@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Hengitysharjoitus</title>
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay muted loop id="background-video">
+      <source src="./videos/mind.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="breathing-container">
+    <div class="circle" id="circle"></div>
+  </div>
+  <p id="instruction">Breathe in as the circle grows larger, and breathe out as it shrinks.</p>
+  <p id="counter">How many breaths: <span id="breath-count">0</span></p>
+  <p id="message"></p>
+  <script src="./js/script.js"></script>
+</body>
+</html>
