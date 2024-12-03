@@ -1,0 +1,68 @@
+/* otsikon tyyli */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    overflow: hidden; /* vierityspalkin poisto */
+}
+
+/* taustavideon tyyli */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Videon mittasuhteiden säilytys */
+}
+
+/* Otsikko */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Hengitysharjoituksen ympyrän tyyli */
+.breathing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #8db7c6; /* Pehmeä sininen ympyrä */
+    border-radius: 50%;
+    animation: breathe 8s ease-in-out infinite;
+}
+
+/* Ohjetekstin tyyli */
+#instruction, #counter, #message {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* pallon animaatio */
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5); /* Ympyrä suurenee/pienenee */
+    }
+}
