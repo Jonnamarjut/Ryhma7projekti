@@ -45,6 +45,11 @@ JavaScript,
 Bootstrap,
 Google API
 
+## Medialähteet
+
+pixabay.com, 
+pexels.com/fi-fi/,
+
 ## Tekijät
 
 Jonna Pehkonen, Jonnamarjut;
