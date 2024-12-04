@@ -1,5 +1,5 @@
 
-/* Otsikon tyyli */
+/* otsikon tyyli */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff; 
@@ -13,7 +13,7 @@ body {
     overflow: hidden; /* vierityspalkin poisto */
 }
 
-/* Taustavideon tyyli */
+/* taustavideon tyyli */
 .video-background {
     position: fixed;
     top: 0;
@@ -29,7 +29,7 @@ body {
     object-fit: cover; /* Videon mittasuhteiden säilytys */
 }
 
-/* Otsikko */
+/* otsikko */
 h1 {
     font-size: 24px;
     color: #333;
@@ -37,7 +37,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Hengitysharjoituksen pallon tyyli */
+/* hengitysharjoituksen pallon tyyli */
 .breathing-container {
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ h1 {
 .circle {
     width: 100px;
     height: 100px;
-    background-color: #8db7c6; /* Pehmeä sininen ympyrä */
+    background-color: #8db7c6; /* pallo */
     border-radius: 50%;
     animation: breathe 8s ease-in-out infinite;
 }
@@ -65,6 +65,6 @@ h1 {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.5); /* Ympyrä suurenee/pienenee */
+        transform: scale(1.5); /* pallo suurenee/pienenee */
     }
 }
