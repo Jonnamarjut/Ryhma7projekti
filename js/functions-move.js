@@ -5,21 +5,23 @@ let score = 0;
         const video = box.querySelector("video");
         const title = box.querySelector(".title");
 
-        box.addEventListener("mouseenter", () => {
-            title.style.display = "none"; // Piilota teksti
-            video.style.display = "block"; // Näytä video
+        box.addEventListener("mouseenter", () => { // valittiin touchend tapahtuma, että video lähtee käyntiin näpäyttämällä
+            title.style.display = "none"; // Piilota teksti kun video menee päälle
+            video.style.display = "block";
             video.play();
         });
 
         box.addEventListener("mouseleave", () => {
-            title.style.display = "block"; // Näytä teksti
-            video.style.display = "none"; // Piilota video
+            title.style.display = "block"; 
+            video.style.display = "none";
             video.pause();
-            video.currentTime = 0; // Resetoi video alkuun
+            video.currentTime = 0;
         });
     });
 
     document.getElementById("scoreButton").addEventListener("click", function() {
         score += 15; // Lisää 15 pistettä
-        document.getElementById("score").textContent = score; // Päivittää pistemäärän näkyviin
+        document.getElementById("score").textContent = score;
     });
+
+    // tätä koodia auttoi tekemään chatgpt, siltä osin, että sain nuo otsikon ja videot toimimaan halutulla tavalla
