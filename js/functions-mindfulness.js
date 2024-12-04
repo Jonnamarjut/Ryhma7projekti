@@ -1,48 +1,30 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let breathCount = 0;
-  let score = 0;
+// functions-mindfulness.js
+let breathCount = 0;
 
-  const circle = document.getElementById('circle');
-  const breathCounter = document.getElementById('breath-count');
-  const message = document.getElementById('message');
+const circle = document.getElementById('circle');
+const breathCounter = document.getElementById('breath-count');
+const message = document.getElementById('message');
 
-  // laskee hengityksiä
-  function trackBreaths() {
-      breathCount++;
-      score++;
-      breathCounter.textContent = breathCount;
-      
-      // pisteet
-      const scoreDisplay = document.getElementById('score');
-      if (scoreDisplay) {
-          scoreDisplay.textContent = 'Points: ' + score;
-      }
+// Funktio laskee hengityksiä
+function trackBreaths() {
+  breathCount++;
+  breathCounter.textContent = breathCount;
 
-      // hengityksiä = 2 tsemppiviesti
-      if (breathCount === 2) {
-        message.textContent = "Yes! Keep breathing!";
-        message.style.color = "#4caf50"; // väri tekstille
-    }
-    
-    // hengityksiä = 5 tsemppiviesti
-      if (breathCount === 5) {
-          message.textContent = "Good job! Keep breathing!";
-          message.style.color = "#4caf50"; // väri tekstille
-      }
+  // Tallennetaan pisteet localStorageen
+  localStorage.setItem('breathingPoints', breathCount);
 
-      // hengityksiä = 7 tsemppiviesti
-      if (breathCount === 7) {
-          message.textContent = "Wow! You're the calm mind.";
-          message.style.color = "#4caf50"; // väri tekstille
-      }
-
-      // hengityksiä = 10  tsemppiviesti
-      if (breathCount === 10) {
-          message.textContent = "You're doing amazing! Keep it up!";
-          message.style.color = "#ff9800"; // väri tekstille
-      }
+  // Tsemppiviestit hengitysten mukaan
+  if (breathCount === 5) {
+    message.textContent = "Good job! Keep breathing!";
+    message.style.color = "#4caf50";
+  } else if (breathCount === 7) {
+    message.textContent = "Wow! You're the calm mind.";
+    message.style.color = "#4caf50";
+  } else if (breathCount === 10) {
+    message.textContent = "You're doing amazing! Keep it up!";
+    message.style.color = "#ff9800";
   }
+}
 
-  // träkkeri animaatioon -->
-  circle.addEventListener('animationiteration', trackBreaths);
-});
+// Liitetään animaation toistoon tapahtumankuuntelija
+circle.addEventListener('animationiteration', trackBreaths);
