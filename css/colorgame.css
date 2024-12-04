@@ -3,80 +3,67 @@
 body {
   font-family: 'Barlow Condensed', sans-serif;
   background-color: #f4f1de;
+  color: #3D405B; 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
 }
 
+
 .header {
-  background-color: #E07A5F;
+  background-color: #f2cc8f;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 10px 20px;
 }
 
 .headerlogo {
-  height: 50px;  
+  height: 50px;
   width: auto;
 }
 
-.header {
-  background-color: #E07A5F;
+nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  padding: 10px 20px;
-  position: relative;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;  
+  padding: 0;
+  display: flex;
 }
 
-.headerlogo {
-  height: 50px;  
-  width: auto;
-}
-
-.header h1 {
-  font-size: 1.8em;
-  color: #3D405B;
-  margin: 0 auto; 
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.header nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
+nav li {
+  margin: 0 15px;
 }
 
 nav a {
-  margin: 0 10px;
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
-  color: white;
+  color: #3D405B;  
   font-weight: 700;
   transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #F2CC8F;
+  color: #E07A5F;  
 }
 
 .content {
-  padding: 10px;
-  max-width: 500px;
+  padding: 20px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  font-size: 1.1em;
 }
 
 #color-selection {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
-  margin: 10px;
+  margin: 15px 0;
 }
 
 .color {
@@ -90,47 +77,50 @@ nav a:hover {
 }
 
 .color:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 #mixing-bowl {
   width: 150px;
   height: 150px;
   border: 2px dashed #3D405B;
-  margin: 15px auto;
+  margin: 20px auto;
   display: flex;
+  flex-direction: column;  
   align-items: center;
   justify-content: center;
   background-color: #F2CC8F;
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#mixed-color {
+#mixing-bowl + #mixed-color {
+  display: block;
   width: 80px;
   height: 80px;
-  margin: 10px auto;
   background-color: white;
   border: 2px solid #333;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;  
 }
 
+
 #guess-section {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #guess-section input {
-  padding: 6px;
-  font-size: 0.8em;
-  margin-right: 6px;
+  padding: 8px;
+  font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-right: 6px;
 }
 
 #guess-section button {
-  padding: 6px 10px;
-  font-size: 0.8em;
+  padding: 8px 12px;
+  font-size: 1em;
   background-color: #E07A5F;
   color: white;
   border: none;
@@ -144,10 +134,10 @@ nav a:hover {
 }
 
 #feedback {
-  margin-top: 8px;
+  margin-top: 10px;
   font-weight: bold;
   color: #3D405B;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .footer {
@@ -155,14 +145,13 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 10px;
   color: white;
-  font-size: 0.8em;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9em;
 }
 
 .footer img {
-  height: 40px;  
+  height: 40px;
   margin-right: 10px;
 }
 
