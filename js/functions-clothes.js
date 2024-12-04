@@ -161,6 +161,7 @@ function restartGame() {
     gameLoopInterval = setInterval(gameLoop, 100);
 }
 
+// Keyboard listener
 window.addEventListener("keydown", function (event) {
     switch (event.key) {
         case "ArrowUp":
@@ -175,6 +176,40 @@ window.addEventListener("keydown", function (event) {
         case "ArrowRight":
             if (direction.x === 0) direction = { x: 20, y: 0 };
             break;
+    }
+});
+
+// Adding touch support
+window.addEventListener("touchstart", function (event) {
+    if (event.touches.length === 1) {
+        touchStartX = event.touches[0].clientX;
+        touchStartY = event.touches[0].clientY;
+    }
+});
+
+window.addEventListener("touchend", function (event) {
+    if (event.changedTouches.length === 1) {
+        const touchEndX = event.changedTouches[0].clientX;
+        const touchEndY = event.changedTouches[0].clientY;
+
+        const deltaX = touchEndX - touchStartX;
+        const deltaY = touchEndY - touchStartY;
+
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+            // Horizontal movement
+            if (deltaX > 0 && direction.x === 0) {
+                direction = { x: 20, y: 0 }; // Right
+            } else if (deltaX < 0 && direction.x === 0) {
+                direction = { x: -20, y: 0 }; // Left
+            }
+        } else {
+            // Vertical movement
+            if (deltaY > 0 && direction.y === 0) {
+                direction = { x: 0, y: 20 }; // Down
+            } else if (deltaY < 0 && direction.y === 0) {
+                direction = { x: 0, y: -20 }; // Up
+            }
+        }
     }
 });
 
