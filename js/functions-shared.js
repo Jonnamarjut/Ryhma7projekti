@@ -34,9 +34,9 @@ const scoresOfRelaxing = localStorage.getItem('')
 document.getElementById('rentoutuminenpisteet').innerHTML = scoresOfRelaxing
 
 
-// Exercising points
+// Move points
 
-const scoresOfExercising = localStorage.getItem('')
+const scoresOfExercising = localStorage.getItem('move')
 document.getElementById('liikuntapisteet').innerHTML = scoresOfExercising
 
 
@@ -56,9 +56,9 @@ function getClothesPoints() {
 // Add clothes points to the total score
 score += getClothesPoints ();
 
+    score += parseInt(localStorage.getItem('move'))
 
 
-//  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
