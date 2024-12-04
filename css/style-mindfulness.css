@@ -13,7 +13,7 @@ body {
     overflow: hidden; /* vierityspalkin poisto */
 }
 
-/* taustavideon tyyli */
+/* taustavideon tyylit */
 .video-background {
     position: fixed;
     top: 0;
@@ -26,7 +26,7 @@ body {
 #background-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Videon mittasuhteiden säilytys */
+    object-fit: cover; /* Videon koko */
 }
 
 /* otsikko */
@@ -52,7 +52,7 @@ h1 {
     animation: breathe 8s ease-in-out infinite;
 }
 
-/* Ohjetekstin tyyli */
+/* ohjetekstin tyyli */
 #instruction, #counter, #message {
     font-size: 18px;
     margin-top: 20px;
