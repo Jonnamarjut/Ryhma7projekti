@@ -61,4 +61,4 @@ document.getElementById('liikuntapisteet').innerHTML = scoresOfExercising
 //  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
 
-document.getElementById('allscores').innerHTML = score
+document.getElementById('allscores').innerHTML = score || 0 // add zero if no value
