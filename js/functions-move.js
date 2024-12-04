@@ -5,7 +5,7 @@ let score = 0;
         const video = box.querySelector("video");
         const title = box.querySelector(".title");
 
-        box.addEventListener("mouseenter", () => { // valittiin touchend tapahtuma, että video lähtee käyntiin näpäyttämällä
+        box.addEventListener("mouseenter", () => {
             title.style.display = "none"; // Piilota teksti kun video menee päälle
             video.style.display = "block";
             video.play();
@@ -22,6 +22,7 @@ let score = 0;
     document.getElementById("scoreButton").addEventListener("click", function() {
         score += 15; // Lisää 15 pistettä
         document.getElementById("score").textContent = score;
+        localStorage.setItem('move', score) // saatu toiselta opiskelijalta
     });
 
     // tätä koodia auttoi tekemään chatgpt, siltä osin, että sain nuo otsikon ja videot toimimaan halutulla tavalla

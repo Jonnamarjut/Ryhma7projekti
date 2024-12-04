@@ -6,10 +6,23 @@ function displayLatestScoreClothes() {
         let viimeisinPiste = highScores[highScores.length - 1];
         vaatteetPisteetElement.textContent = `${viimeisinPiste}`;
     } else {
-        vaatteetPisteetElement.textContent = "No points";
+        vaatteetPisteetElement.textContent = "";
     }
 }
 displayLatestScoreClothes();
+// Search and add animals points
+let score = parseInt(localStorage.getItem('animals')) || 0; // add zero if no value
+
+// Search and add clothes points 
+function getClothesPoints() {
+    let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+    if (highScores.length > 0) {
+        return highScores[highScores.length - 1];
+    }
+    return 0; 
+}
+// Add clothes points to the total score
+score += getClothesPoints ();
 
 //Animals points
 
@@ -33,31 +46,17 @@ const scoresOfRelaxing = localStorage.getItem('breathingPoints') || 0;
 document.getElementById('rentoutuminenpisteet').innerHTML = "Pisteet: " + scoresOfRelaxing;
 
 
-// Exercising points
+// Move points
 
-const scoresOfExercising = localStorage.getItem('')
+const scoresOfExercising = localStorage.getItem('move')
 document.getElementById('liikuntapisteet').innerHTML = scoresOfExercising
 
 
 //Total score
 
-// Search and add animals points
-let score = parseInt(localStorage.getItem('animals')) || 0; // add zero if no value
-
-// Search and add clothes points 
-function getClothesPoints() {
-    let highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-    if (highScores.length > 0) {
-        return highScores[highScores.length - 1];
-    }
-    return 0; 
-}
-// Add clothes points to the total score
-score += getClothesPoints ();
+    score += parseInt(localStorage.getItem('move'))
 
 
-
-//  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
 //  score += parseInt(localStorage.getItem(''))
