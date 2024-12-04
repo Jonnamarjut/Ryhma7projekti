@@ -49,6 +49,7 @@ Google API
 
 pixabay.com, 
 pexels.com/fi-fi/,
+Canva -kuvakirjasto
 
 ## Tekijät
 
