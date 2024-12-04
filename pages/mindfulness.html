@@ -24,7 +24,7 @@
     }
     main {
       flex: 1;
-      padding-top: 60px; /* Vähennettiin headerin tilaa */
+      padding-top: 60px; /* headerin tila */
       padding-bottom: 20px;
       display: flex;
       flex-direction: column;
@@ -50,25 +50,25 @@
       z-index: 1;
     }
     .custom-navbar {
-      background-color: rgba(242, 204, 143, 0.9); /* Vähän läpinäkyvä header */
-      padding: 10px 0; /* Pienempi header-korkeus */
+      background-color: rgba(242, 204, 143, 0.9); /* läpinäkyvä header */
+      padding: 10px 0; /* headerin korkeus */
     }
     .headerlogo {
-      width: 100px; /* Pienempi logo */
+      width: 100px; /* logo */
     }
     .navbar-nav {
       width: 100%;
-      gap: 10px; /* Pienennetään väliä linkkien välillä */
-      justify-content: center; /* Keskitetään linkit paremmin */
+      gap: 10px; /* väli linkkien välillä */
+      justify-content: center; /* Kekitertty linkit  */
     }
     .nav-link {
-      padding: 0 5px; /* Pienennetään linkkien sisäistä tyhjää tilaa */
-      font-size: 0.9rem; /* Pienempi fonttikoko, jotta kaikki mahtuu */
+      padding: 0 5px; /* linkkien blank tila */
+      font-size: 0.9rem; /* fonttikoko */
     }
   </style>
 </head>
 <body>
-  <!-- Header alkaa -->
+  <!-- headeri alkaa -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
       <div class="container-fluid">
@@ -91,9 +91,9 @@
       </div>
     </nav>
   </header>
-  <!-- Header loppuu -->
+  <!-- headeri loppuu -->
 
-  <!-- Pääsisältö alkaa -->
+  <!-- video -->
   <main>
     <div class="video-background">
       <video autoplay muted loop id="background-video">
@@ -108,7 +108,7 @@
     <p id="counter">How many breaths / points: <span id="breath-count">0</span></p>
     <p id="message"></p>
   </main>
-  <!-- Pääsisältö loppuu -->
+  <!-- video -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/functions-mindfulness.js"></script>
