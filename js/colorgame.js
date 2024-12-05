@@ -31,30 +31,24 @@ function allowDrop(event) {
 }
 
 function drag(event) {
-  console.log("Dragged color:", event.target.dataset.color);
   event.dataTransfer.setData("color", event.target.dataset.color);
 }
 
 function drop(event) {
   event.preventDefault();
   const color = event.dataTransfer.getData("color");
-  console.log("Dropped color:", color);
 
-  if (selectedColors.length < 2 && !selectedColors.includes(color)) {
+  if (selectedColors.length < 2) {
     selectedColors.push(color);
   }
 
-  console.log("Selected colors:", selectedColors);
-
   if (selectedColors.length === 2) {
     const sortedColors = selectedColors.slice().sort().join("+");
-    console.log("Combined colors:", sortedColors);
     mixedColor = colors[sortedColors] || "grey";
 
     document.getElementById("mixed-color").style.backgroundColor = mixedColor;
-    document.getElementById("mixed-color").textContent = mixedColor; // Värin nimi näkyy
-
-    selectedColors = []; // Tyhjentää taulukon sekoituksen jälkeen
+    // Poistetaan värin nimen näyttö: document.getElementById("mixed-color").textContent = mixedColor;
+    selectedColors = [];
   }
 }
 
@@ -83,7 +77,3 @@ document.querySelectorAll(".color").forEach(element => {
   element.ondragstart = drag;
 });
 
-// Lisätään drag-funktio jokaiseen värielementtiin
-document.querySelectorAll(".color").forEach(element => {
-  element.ondragstart = drag;
-});
