@@ -4,35 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Mixing Game</title>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/colorgame.css">
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <img src="../shared-img/LOGOHEADER.png" alt="headerImg" id="headerImg" class="headerlogo">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mt-4 fs-5" style="padding-left: 260px">
-            <li class="nav-item"><a class="nav-link active" href="../index.html">Etusivu</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../pages/info.html">Infosivu</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../pages/clothes.html">Vaatteet</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../pages/colorgame.html">Värit</a></li>
-            <li class="nav-item"><a class="nav-link active" href="adjektiivit.html">Adjektiivit</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../pages/animals.html">Eläimet</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../pages/move.html">Liikunta</a></li>
-            <li class="nav-item"><a class="nav-link active" href="../pages/mindfulness.html">Rentoutuminen</a></li>
-          </ul>
-        </div>
-      </div>
+    <nav>
+      <img src="../shared-img/LOGOHEADER.png" alt="Logo" class="headerlogo">
+      <ul>
+        <li><a href="../index.html">Etusivu</a></li>
+        <li><a href="../pages/info.html">Infosivu</a></li>
+        <li><a href="../pages/clothes.html">Vaatteet</a></li>
+        <li><a href="../pages/colorgame.html">Värit</a></li>
+        <li><a href="../pages/adjektiivit.html">Adjektiivit</a></li>
+        <li><a href="../pages/animals.html">Eläimet</a></li>
+        <li><a href="../pages/move.html">Liikunta</a></li>
+        <li><a href="../pages/mindfulness.html">Rentoutuminen</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="content">
-    <h2>Color Mixing Game</h2>
+    <h1>Color Mixing Game</h1>
+    <p>Drag and drop two colors into the mixing bowl to see the result!</p>
 
     <div id="color-selection">
       <div class="color" style="background-color: red;" data-color="red" draggable="true"></div>
@@ -41,17 +34,19 @@
       <div class="color" style="background-color: green;" data-color="green" draggable="true"></div>
       <div class="color" style="background-color: orange;" data-color="orange" draggable="true"></div>
       <div class="color" style="background-color: purple;" data-color="purple" draggable="true"></div>
-      <div class="color" style="background-color: teal;" data-color="teal" draggable="true"></div>
     </div>
+
 
     <div id="mixing-bowl" ondrop="drop(event)" ondragover="allowDrop(event)">
       <p>Drop colors here</p>
     </div>
 
+
     <div id="result">
       <h3>Mixed Color:</h3>
       <div id="mixed-color"></div>
     </div>
+
 
     <div id="guess-section">
       <h3>Guess the mixed color:</h3>
@@ -63,10 +58,9 @@
   </main>
 
   <footer class="footer">
-    <img src="../shared-img/LOGO4.png" alt="footerImg" id="footerImg">
+    <img src="../shared-img/LOGO4.png" alt="Footer Logo">
     <p>Tekijät: Susanna, Ejona, Jonna, Olivia, Sanna ja Salla / Oulun ammattikorkeakoulu</p>
   </footer>
-
- <script src="./colorgame.html"></script>
+  <script src="../js/colorgame.js"></script>
 </body>
 </html>
