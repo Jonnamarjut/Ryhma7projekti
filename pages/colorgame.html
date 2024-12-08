@@ -63,5 +63,15 @@
   </footer>
   <script src="../js/colorgame.js"></script>
       <script src="../js/functions-shared.js"></script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Haetaan pisteet localStoragesta
+        const points = localStorage.getItem('breathingPoints') || 0;
+
+        // Päivitetään etusivun elementtiin pisteet
+        const pointsElement = document.querySelector('#colorgame-pisteet');
+        if (pointsElement) {
+            pointsElement.textContent = `Pisteet: ${points}`;
+        }
+    });
 </body>
 </html>
