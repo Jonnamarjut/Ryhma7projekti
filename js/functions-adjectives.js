@@ -6,16 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Data eri kuvista ja adjektiiveista
     const data = [
-        { image: './pictures/happy.jpg', correct: 'happy', adjectives: ['Happy', 'Angry'] },
-        { image: './pictures/sad.jpg', correct: 'sad', adjectives: ['Joyfull', 'Sad'] },
-        { image: './pictures/small.jpg', correct: 'small', adjectives: ['Big', 'Small'] },
-        { image: './pictures/hard.jpg', correct: 'hard', adjectives: ['Hard', 'Soft'] },
-        { image: './pictures/dirty.jpg', correct: 'dirty', adjectives: ['Clean', 'Dirty'] },
-        { image: './pictures/angry.jpg', correct: 'angry', adjectives: ['Funny', 'Angry'] },
-        { image: './pictures/big.jpg', correct: 'big', adjectives: ['Big', 'Small'] },
-        { image: './pictures/strong.jpg', correct: 'strong', adjectives: ['Strong', 'Weak'] },
-        { image: './pictures/tired.jpg', correct: 'tired', adjectives: ['Awake', 'Tired'] },
-        { image: './pictures/sick.jpg', correct: 'sick', adjectives: ['Sick', 'Healthy'] },
+        { image: '../other-img/happy.jpg', correct: 'happy', adjectives: ['Happy', 'Angry', 'Tired'] },
+        { image: '../other-img/sad.jpg', correct: 'sad', adjectives: ['Joyfull', 'Sad', 'Sick'] },
+        { image: '../other-img/small.jpg', correct: 'small', adjectives: ['Big', 'Small', 'Strong'] },
+        { image: '../other-img/hard.jpg', correct: 'hard', adjectives: ['Hard', 'Soft', 'Angry'] },
+        { image: '../other-img/dirty.jpg', correct: 'dirty', adjectives: ['Clean', 'Dirty', 'Small'] },
+        { image: '../other-img/angry.jpg', correct: 'angry', adjectives: ['Weak', 'Funny', 'Angry'] },
+        { image: '../other-img/big.jpg', correct: 'big', adjectives: ['Big', 'Small', 'Hard'] },
+        { image: '../other-img/strong.jpg', correct: 'strong', adjectives: ['Strong', 'Happy', 'Weak'] },
+        { image: '../other-img/tired.jpg', correct: 'tired', adjectives: ['Awake', 'Big', 'Tired'] },
+        { image: '../other-img/sick.jpg', correct: 'sick', adjectives: ['Tired', 'Sick', 'Healthy'] },
 
     ];
 

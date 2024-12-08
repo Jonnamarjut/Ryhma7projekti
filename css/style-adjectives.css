@@ -77,13 +77,6 @@ h2 {
     color: white;
 }
 
-.game-container {
-    display: flex; /* Jotta sisältöä voidaan asettaa vierekkäin */
-    justify-content: flex-end; /* Sijoitetaan oikealle */
-    align-items: center;
-    padding-right: 20px; /* Etäisyyttä oikealta */
-    margin: auto; /* Keskittää sivun sisällön pystysuunnassa */
-}
 
 /* Palapelin tyyli */
 .puzzle-container {
@@ -100,7 +93,7 @@ h2 {
     border: 2px solid #ccc;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
 }
 
 #adjective-container {
