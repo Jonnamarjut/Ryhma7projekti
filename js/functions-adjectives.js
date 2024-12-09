@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const imageContainer = document.querySelector('.image-container img');
-    const adjectiveContainer = document.querySelector('.adjective-container');
-    const messageElement = document.getElementById('message');
-    const nextImageButton = document.getElementById('next-image');
+    const imageContainer = document.querySelector('.image-container img')
+    const adjectiveContainer = document.querySelector('.adjective-container')
+    const messageElement = document.getElementById('message')
+    const nextImageButton = document.getElementById('next-image')
+    const scoreElement = document.getElementById('score')
 
     // Data eri kuvista ja adjektiiveista
     const data = [
@@ -19,63 +20,96 @@ document.addEventListener('DOMContentLoaded', function () {
 
     ];
 
-    let currentIndex = 0;
+    let currentIndex = 0
+    let score = 0
+
+    function updateScore() {
+        scoreElement.value = score
+    }
 
     // Lataa ensimmäinen kuva
-    loadImage(data[currentIndex]);
+    loadImage(data[currentIndex])
+    updateScore()
 
     // Mahdollistaa adjektiivien vetämisen
     function enableDragAndDrop() {
-        const adjectives = document.querySelectorAll('.adjective');
+        const adjectives = document.querySelectorAll('.adjective')
         adjectives.forEach(adjective => {
-            adjective.addEventListener('dragstart', dragStart);
+            adjective.addEventListener('dragstart', dragStart)
         });
-        imageContainer.addEventListener('dragover', event => event.preventDefault());
-        imageContainer.addEventListener('drop', handleDrop);
+        imageContainer.addEventListener('dragover', event => event.preventDefault())
+        imageContainer.addEventListener('drop', handleDrop)
     }
 
     function dragStart(event) {
-        event.dataTransfer.setData('text', event.target.id);
+        event.dataTransfer.setData('text', event.target.id)
     }
 
     function handleDrop(event) {
         event.preventDefault();
-        const adjectiveId = event.dataTransfer.getData('text');
-        const correctAnswer = data[currentIndex].correct;
+        const adjectiveId = event.dataTransfer.getData('text')
+        const correctAnswer = data[currentIndex].correct
+        
+        const rightMessages = [
+            'Well done!',
+            'Good job!',
+            'Correct!',
+            'Nice one!'
+        ]
+        
+        const wrongMessages = [
+            'Try again!',
+            'Not quite, try again!',
+            "That's wrong, give it another shot!",
+            'Oops! Not correct'
+        ]
 
         if (adjectiveId === correctAnswer) {
-            messageElement.textContent = 'Correct! Great job!';
-            nextImageButton.style.display = 'block';
+            if (imageContainer.classList.contains('answered')) {
+                messageElement.textContent = 'Go to the next one'
+                return
+            }
+            
+            const randomIndex = Math.floor(Math.random() * rightMessages.length)
+            messageElement.textContent = rightMessages[randomIndex]
+            score++
+            updateScore()
+            nextImageButton.style.display = 'block'
+            imageContainer.classList.add('answered')
         } else {
-            messageElement.textContent = 'Try again!';
+            const randomIndex = Math.floor(Math.random() * wrongMessages.length)
+            messageElement.textContent = wrongMessages[randomIndex]
         }
     }
 
     // Nappia painamalla lataa seuraava kuva
     nextImageButton.addEventListener('click', function () {
-        currentIndex++;
+        currentIndex++
         if (currentIndex < data.length) {
-            loadImage(data[currentIndex]);
-            messageElement.textContent = '';
-            nextImageButton.style.display = 'none';
+            loadImage(data[currentIndex])
+            messageElement.textContent = ''
+            nextImageButton.style.display = 'none'
         } else {
-            messageElement.textContent = 'You completed the game! 🎉';
-            nextImageButton.style.display = 'none';
+            messageElement.textContent = 'Congratulations! You completed the game!'
+            nextImageButton.style.display = 'none'
         }
     });
 
     // Lataa kuva ja adjektiivit
     function loadImage(item) {
-        imageContainer.src = item.image;
-        adjectiveContainer.innerHTML = '';
+        imageContainer.src = item.image
+        imageContainer.alt = 'A drawn picture of an animal that is ${item.correct}'
+        adjectiveContainer.innerHTML = ''
         item.adjectives.forEach(adjective => {
-            const div = document.createElement('div');
-            div.id = adjective.toLowerCase();
-            div.className = 'adjective';
-            div.textContent = adjective;
-            div.draggable = true;
-            adjectiveContainer.appendChild(div);
+            const div = document.createElement('div')
+            div.id = adjective.toLowerCase()
+            div.className = 'adjective'
+            div.textContent = adjective
+            div.draggable = true
+            adjectiveContainer.appendChild(div)
         });
-        enableDragAndDrop();
+        enableDragAndDrop()
+
+        imageContainer.classList.remove('answered')
     }
 });
