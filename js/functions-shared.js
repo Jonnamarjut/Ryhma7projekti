@@ -43,7 +43,7 @@ document.getElementById('adjektiivitpisteet').innerHTML = scoresOfAdjectives
 
 // Mindfulness points
 const scoresOfRelaxing = localStorage.getItem('breathingPoints');
-document.getElementById('rentoutuminenpisteet').innerHTML = "Pisteet: " + scoresOfRelaxing;
+document.getElementById('rentoutuminenpisteet').innerHTML = scoresOfRelaxing;
 
 
 // Move points

@@ -5,12 +5,12 @@ const circle = document.getElementById('circle');
 const breathCounter = document.getElementById('breath-count');
 const message = document.getElementById('message');
 
-// Funktio laskee hengityksiä
+// tämä funktio laskee hengityksiä
 function trackBreaths() {
   breathCount++;
   breathCounter.textContent = breathCount;
 
-  // Tallennetaan pisteet localStorageen
+  // tallennetaan pisteet LS:n
   localStorage.setItem('breathingPoints', breathCount);
 
   // Tsemppiviestit hengitysten mukaan
@@ -26,5 +26,5 @@ function trackBreaths() {
   }
 }
 
-// Liitetään animaation toistoon tapahtumankuuntelija
+// Pallon toistonn tapahtumankuuntelija
 circle.addEventListener('animationiteration', trackBreaths);
