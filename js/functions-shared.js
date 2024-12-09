@@ -31,7 +31,7 @@ document.getElementById('elaimetpisteet').innerHTML = scoresOfAnimals
 
 //Colours points
 
-const scoresOfColours = localStorage.getItem('')
+const scoresOfColours = localStorage.getItem('color')
 document.getElementById('varitpisteet').innerHTML = scoresOfColours
 
 
