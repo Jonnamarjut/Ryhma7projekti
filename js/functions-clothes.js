@@ -78,7 +78,6 @@ function isFoodOnSnake(position) {
     return snake.some(part => part.x === position.x && part.y === position.y);
 }
 
-
 function drawFood() {
     // Let's draw a picture of clothes as food
     const img = clothingImages[currentClothingIndex];
@@ -212,4 +211,5 @@ window.addEventListener("touchend", function (event) {
         }
     }
 });
+
 restartGame();

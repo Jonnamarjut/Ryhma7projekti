@@ -17,7 +17,6 @@ main {
     flex: 1;
 }
 
-
 #footerImg {
     width: 80%;
 }
@@ -36,7 +35,6 @@ canvas {
 p {
     font-size: 1.2em;
 }
-
 
 h2 {
     color: #3d405b;
@@ -157,3 +155,4 @@ h2 {
         text-align: center;
     }
 }
+
