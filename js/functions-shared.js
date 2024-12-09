@@ -37,7 +37,7 @@ document.getElementById('varitpisteet').innerHTML = scoresOfColours
 
 //Adjectives points
 
-const scoresOfAdjectives = localStorage.getItem('')
+const scoresOfAdjectives = localStorage.getItem('adjectives')
 document.getElementById('adjektiivitpisteet').innerHTML = scoresOfAdjectives
 
 
@@ -57,7 +57,7 @@ document.getElementById('liikuntapisteet').innerHTML = scoresOfExercising
     score += parseInt(localStorage.getItem('move'))
 
     score += parseInt(localStorage.getItem('breathingPoints'))
-//  score += parseInt(localStorage.getItem(''))
-//  score += parseInt(localStorage.getItem(''))
+    score += parseInt(localStorage.getItem('color'))
+    score += parseInt(localStorage.getItem('adjectives'))
 
 document.getElementById('allscores').innerHTML = score || 0 // add zero if no value

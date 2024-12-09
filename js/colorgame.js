@@ -74,6 +74,7 @@ const colors = {
   
     document.getElementById("score").textContent = score;
     document.getElementById("color-guess").value = "";
+    localStorage.setItem('color', score)
   }
   
   document.querySelectorAll(".color").forEach(element => {
