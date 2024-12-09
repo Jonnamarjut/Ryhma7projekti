@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
-    <title>Connect the right adjektive</title>
+    <title>Connect the right adjective</title>
     <link rel="stylesheet" href="../css/style-adjectives.css">
 </head>
 <body>
@@ -34,31 +34,35 @@
         </nav>
       </header> 
     <main>
-        <div class="container mt-4">
-            <h2 class="text-center">Connect the right adjective</h2>
-            <div class="game-container">
-                <div class="game-instructions col-12 col-md-5 col-lg-4 mb-2 mt-4 text-center">
-                    <p>You will see a picture of an animal. Connect the correct adjective by dragging and dropping it on to
-                      the picture. You'll get a point per correct answer. 
-                      <br>
-                      <br>
-                      Tulet näkemään kuvan eläimestä. Yhdistä oikea adjektiivi raahaamalla ja tiputtamalla se kuvan päälle. Saat pisteitä jokaisesta 
-                      oikeasta vastauksesta. 
-                    </p>
+      <div class="container mt-4">
+        <h2 class="text-center">Connect the right adjective</h2>
+        <div class="game-container d-flex flex-column flex-md-row justify-content-between align-items-start">
+            <div class="game-instructions col-12 col-md-5 col-lg-4 mb-2 mt-4 text-center text-md-start">
+                <p>
+                    You will see a picture of an animal. Connect the correct adjective by dragging and dropping it on to
+                    the picture. You'll get a point per correct answer.
+                    <br><br>
+                    Tulet näkemään kuvan eläimestä. Yhdistä oikea adjektiivi raahaamalla ja tiputtamalla se kuvan päälle. Saat pisteitä jokaisesta 
+                    oikeasta vastauksesta.
+                </p>
+            </div>
+
+            <div class="game-area col-12 col-md-6">
+                <div class="image-container text-center">
+                    <img src="../other-img/happy.jpg" alt="Happy Dog">
                 </div>
-                <div class="gamecontainer">
-                  <div class="image-container">
-                      <img src="../other-img/happy.jpg" alt="Happy Dog">
-                  </div>
-                  <div class="adjective-container">
-                      <div id="happy" class="adjective" draggable="true">Happy</div>
-                      <div id="sad" class="adjective" draggable="true">Sad</div>
-                  </div>
-                  <div id="message"></div>
-                  <button id="next-image" class="btn custom-button mt-3">Next</button>
+                <div class="adjective-container d-flex justify-content-center mt-3">
+                    <div id="happy" class="adjective me-2" draggable="true">Happy</div>
+                    <div id="sad" class="adjective" draggable="true">Sad</div>
+                    <div id="tired" class="adjective" draggable="true">Tired</div>
                 </div>
-            <p class="textofscores">Score:<output></output></p>
+                <div id="message" class="mt-3 text-center"></div>
+                <button id="next-image" class="btn custom-button mt-3">Next</button>
+                <p class="text-center mt-3">Score: <output id="score">0</output></p>
+            </div>
         </div>
+    </div>
+    
     </main>
     <footer class="custom-footer">
         <div class="container py-1">

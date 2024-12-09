@@ -10,8 +10,9 @@ body {
     background-color: #f4f1de;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Korjattu "100hv" -> "100vh" */
+    min-height: 100vh;
     margin: 0;
+    position: relative;
 }
 
 main {
@@ -75,39 +76,81 @@ h2 {
 .custom-button {
     background-color: #3d405b;
     color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+
 }
 
 
-/* Palapelin tyyli */
-.puzzle-container {
+/* Peli ja tekstin asettelu */
+.game-container {
+    display: flex; /* Asettaa tekstin ja pelin vierekkäin */
+    justify-content: space-between; /* Jakaa tilan tasaisesti */
+    align-items: flex-start; /* Kohdistaa yläreunaan */
+    gap: 3px; /* Väli elementtien välillä */
+    margin: 20px auto; /* Keskittää sisällön horisontaalisesti */
+    max-width: 1200px; /* Maksimileveys */
+    padding: 20px;
+}
+
+/* Tekstin sisältö */
+.game-instructions {
+    flex: 2; /* Ottaa tilaa suhteessa peliin */
+    max-width: 400px;
+    text-align: justify; /* Tasaa tekstin */
+    color: #3d405b;
+    border: solid, #81b29a, 4px;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+/* Pelin sisäiset elementit */
+.game-area {
+    display: flex;
+    flex-direction: column; /* Asettaa pelin elementit päällekkäin */
+    align-items: center; /* Kohdistaa keskelle */
+    gap: 10px; /* Väli elementtien välillä */
+    margin-top: 20px;
+}
+
+/* Kuvan asetukset */
+.image-container {
+    width: 350px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin-top: 30px;
+    border: solid, 4px, #81b29a;
+    border-radius: 2em;
+    padding: 10px;
+    background-color: white;
 }
 
-.image-container {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: right;
+.image-container img {
+    width: 500%; /* Kuvan koko täyttää tilan */
+    height: 100%; /* Kuvan mittasuhteet säilyvät */
+    object-fit: contain;
 }
 
+/* Adjektiivit */
 #adjective-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    margin: 0 auto;
 }
 
 .adjective {
     background-color: #f4a261;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 14px;
+    margin: 10px;
+    border-radius: 10px;
     cursor: pointer;
     user-select: none;
+    font-size: larger;
 }
 
 .adjective:active {
@@ -116,45 +159,33 @@ h2 {
 
 /* Viesti pelaajalle */
 #message {
-    margin-top: 30px;
-    font-size: 18px;
+    margin-top: 15px;
+    font-size: 30px;
     font-weight: bold;
     color: green;
 }
 
-/* Puzzle-elementit */
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    border-radius: 15px;
-    border: 2px solid black;
-}
-
-.box img {
-    width: 60%;
-    max-width: 200px;
-    height: auto;
-    display: block;
-    justify-content: center;
+/* Pistetilanne */
+#score {
+    font-weight: bold;
+    color: #3d405b;
+    font-size: larger;
 }
 
 /* Responsiivisuus ja säätöjä */
 @media (max-width: 768px) {
-    .puzzle-container {
-        flex-direction: column;
-        gap: 10px;
+    .game-container {
+        flex-direction: column; /* Vaihda tekstin ja pelin asettelu päällekkäiseksi pienellä näytöllä */
+        align-items: center;
+    }
+
+    .game-instructions {
+        max-width: 100%;
+        text-align: center;
     }
 }
 
 #next-image {
     display: none; /* Näytä nappi vasta oikean arvauksen jälkeen */
     margin-top: 20px;
-}
-
-#message {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #3d405b;
 }
