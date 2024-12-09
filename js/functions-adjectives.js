@@ -112,4 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         imageContainer.classList.remove('answered')
     }
+
+    localStorage.setItem('adjectives', score)
 });
