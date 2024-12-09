@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
             messageElement.textContent = rightMessages[randomIndex]
             score++
             updateScore()
+            localStorage.setItem('adjectives', score)
             nextImageButton.style.display = 'block'
             imageContainer.classList.add('answered')
         } else {
@@ -113,5 +114,4 @@ document.addEventListener('DOMContentLoaded', function () {
         imageContainer.classList.remove('answered')
     }
 
-    localStorage.setItem('adjectives', score)
 });
