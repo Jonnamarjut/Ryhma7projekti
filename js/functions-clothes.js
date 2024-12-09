@@ -212,5 +212,4 @@ window.addEventListener("touchend", function (event) {
         }
     }
 });
-
 restartGame();
