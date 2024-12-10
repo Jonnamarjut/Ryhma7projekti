@@ -33,7 +33,7 @@ Kannustamme pelaajia nousemaan ylös ja liikkumaan pelaamisen lomassa – tervey
 
 ### Adjektiivien yhdistely
 
-Tässä pelissä pelaaja näkee kuvan ja kaksi adjektiivia. Näistä pelaajan tulee valita oikea kuvaan viittaava adjektiivi. Pisteitä kertyy, kun pelaaja saa yhdistettyä oikean kuvaavan sanan.  
+Tässä pelissä pelaaja näkee kuvan ja kolme adjektiivia. Näistä pelaajan tulee valita oikea kuvaan viittaava adjektiivi, vedettävä ja dropattava se kuvan päälle. Pisteitä kertyy, kun pelaaja saa yhdistettyä oikean kuvaavan sanan, muussa tapauksessa tulee viesti, joka kertoo vastauksen olevan väärä. Oikeasta vastauksesta tulee myös teksti, joka kertoo vastauksen olevan oikea. Maksimipistemäärä on 10. 
 
 ## Tekniikoita
 
