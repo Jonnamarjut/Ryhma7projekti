@@ -10,7 +10,7 @@ Sovelluksen käyttö on helppoa. Etusivulta näet erilaiset teemat, joista voit 
 
 ### Matopeli
 
-Matopelin avulla voit opetella vaatesanoja englanniksi. Se tarjoaa viihdyttävän ja haasteellisen kokemuksen. Paina "Aloita peli" tai siirry ylävalikosta kohtaan "Vaatteet". Pelaaminen tapahtuu näppäimistön nuolinäppäimiä käyttämällä. Tavoitteena on kasvattaa mato mahdollisimman pitkäksi. Madon kasvattaminen onnistuu ruokkimalla matoa "vaatteilla". Ohjaa matoa nuolinäppäimillä. Peli päättyy mikäli osut madon vartaloon tai seinään.
+Matopelin avulla voit opetella vaatesanoja englanniksi. Se tarjoaa viihdyttävän ja haasteellisen kokemuksen. Paina "Aloita peli" tai siirry ylävalikosta kohtaan "Vaatteet". Pelaaminen tapahtuu näppäimistön nuolinäppäimiä käyttämällä. Tavoitteena on kasvattaa mato mahdollisimman pitkäksi. Madon kasvattaminen onnistuu ruokkimalla matoa "vaatteilla". Ohjaa matoa nuolinäppäimillä. Peli päättyy mikäli osut madon vartaloon tai seinään. Toteuttajana Susanna321.
 
 
 ### Väriyhdistelmäpeli
