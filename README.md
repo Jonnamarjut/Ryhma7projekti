@@ -25,7 +25,7 @@ Mindfulness -pelissä tasataan ylivirittyneisyyttä ja harjoitellaan rauhallista
 
 ### Muistipeli
 
-Muistipelin avulla tulet oppimaan englanninkielisiä eläinten termejä. Pelin sääntö on selkeä ja yksinkertainen: tarkoituksena on etsiä korttipakkauksesta identtisiä muistikortteja hiirtä käyttäen, ja jokaisesta löydetystä parista pelaaja saa 1 pisteen. Peli päättyy, kun pelaaja saavuttaa pelin pisteiden maksimimäärän, eli yhteensä 9 pistettä. Pelin tavoitteena on pienen haastavuuden ja suloisten eläinkuvien kautta motivoida alakoululaisia oppimaan uusia englanninkielisiä sanoja. Toteuttajana n3kwoi00 (Olivia Kwok)
+Muistipelin avulla tulet oppimaan englanninkielisiä eläinten termejä. Pelin sääntö on selkeä ja yksinkertainen: tarkoituksena on etsiä korttipakkauksesta identtisiä muistikortteja hiirtä käyttäen, ja jokaisesta löydetystä parista pelaaja saa 1 pisteen. Peli päättyy, kun pelaaja saavuttaa pelin pisteiden maksimimäärän, eli yhteensä 9 pistettä. Pelin tavoitteena on pienen haastavuuden ja suloisten eläinkuvien kautta motivoida alakoululaisia oppimaan uusia englanninkielisiä sanoja. Toteuttajana n3kwoi (Olivia Kwok)
 
 ### Taukojumppa
 
